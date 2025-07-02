@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="music-player">
+    <h2 id="title">Song Title</h2>
+    <h3 id="artist">Artist</h3>
+
+    <audio id="audio" src=""></audio>
+
+    <div class="controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+    </div>
+
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0">
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="volume">
+      <label for="volume">🔊</label>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <div class="playlist">
+      <h4>🎵 Playlist</h4>
+      <ul id="playlist"></ul>
+    </div>
+
+    <div class="autoplay">
+      <label><input type="checkbox" id="autoplay"> Autoplay</label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
